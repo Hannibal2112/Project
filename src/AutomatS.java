@@ -347,7 +347,7 @@ public class AutomatS extends  JFrame {
     private void odejmij(double amount) {
         String currentPriceStr = Cena.getText().trim();
         try {
-            double currentPrice = Double.parseDouble(currentPriceStr.replace(',', '.')); // Zamiana przecinka na kropkę
+            double currentPrice = Double.parseDouble(currentPriceStr.replace(',', '.'));
             currentPrice -= amount;
 
             DecimalFormat df = new DecimalFormat("#0.00");
