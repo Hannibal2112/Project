@@ -177,6 +177,24 @@ public class Edycja extends JFrame {
                 }
             }
         });
+        Producent.addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyTyped(KeyEvent e) {
+                char c = e.getKeyChar();
+                if (c == ',') {
+                    e.consume();
+                }
+            }
+        });
+        Nazwa.addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyTyped(KeyEvent e) {
+                char c = e.getKeyChar();
+                if (c == ',') {
+                    e.consume();
+                }
+            }
+        });
     }
 
     private void importCSV() {
